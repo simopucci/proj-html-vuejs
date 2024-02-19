@@ -2,6 +2,7 @@
   import { store } from './store';
 
   import AppHeader from './components/AppHeader.vue';
+  import AppMain from './components/AppMain.vue';
 
   export default {
     data() {
@@ -67,7 +68,7 @@
       };
     },
 
-    components: { AppHeader }
+    components: { AppHeader, AppMain }
   }
 
 </script>
@@ -78,6 +79,8 @@
   :logoPath="headerItems.logo"
   :socials="headerItems.socials">
   </AppHeader>
+  
+  <AppMain></AppMain>
 </template>
 
 <style lang="scss">

@@ -56,7 +56,7 @@
                     </li>
                 </ul>
                 <!-- Button -->
-                <button class="btn rounded-pill">Get In Toch!</button>
+                <button class="btn rounded-pill my-btn">Get In Toch!</button>
             </nav>
         </div>
 
@@ -133,15 +133,15 @@ nav ul {
   }
 }
 
-button {
+.my-btn {
     color: white;
-  cursor: pointer;
-  background-color: #CE7C2A;
+    cursor: pointer;
+    background-color: #CE7C2A;
 
-  &:hover {
-    color: white;
-    background-color: #143D62;
-  }
+    &:hover {
+        color: white;
+        background-color: #143D62;
+    }
 }
 
 .active {
