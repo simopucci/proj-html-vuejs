@@ -66,6 +66,77 @@
           logo: '../assets/img/logo.png'
         },
 
+        footerItems: {
+
+          supportLinks: [
+            {
+              text: 'Contact Us',
+              url: '#'
+            },
+            {
+              text: 'Online Chat',
+              url: '#'
+            },
+            {
+              text: 'Whatsapp',
+              url: '#'
+            },
+            {
+              text: 'Telegram',
+              url: '#'
+            },
+            {
+              text: 'Snapchat',
+              url: '#'
+            },
+          ],
+          
+          aboutLinks: [
+            {
+              text: 'About Us',
+              url: '#'
+            },
+            {
+              text: 'Blog',
+              url: '#'
+            },
+            {
+              text: 'Career',
+              url: '#'
+            },
+            {
+              text: 'Job',
+              url: '#'
+            },
+            {
+              text: 'In press',
+              url: '#'
+            },
+          ],
+
+          faqLinks: [
+            {
+              text: 'Account',
+              url: '#'
+            },
+            {
+              text: 'Order',
+              url: '#'
+            },
+            {
+              text: 'Delivery',
+              url: '#'
+            },
+            {
+              text: 'Payment',
+              url: '#'
+            },
+            {
+              text: 'Return',
+              url: '#'
+            },
+          ],
+        }
       };
     },
 
@@ -81,7 +152,11 @@
   :socials="headerItems.socials">
   </AppHeader>
   <AppMain></AppMain>
-  <AppFooter></AppFooter>
+  <AppFooter
+  :socials="headerItems.socials"
+  :supportLinks="footerItems.supportLinks"
+  :aboutLinks="footerItems.aboutLinks"
+  :faqLinks="footerItems.faqLinks"></AppFooter>
 </template>
 
 <style lang="scss">
