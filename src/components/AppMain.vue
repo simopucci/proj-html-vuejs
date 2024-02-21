@@ -3,6 +3,7 @@
     import AboutUsSection from './AboutUsSection.vue';
     import ServiceSection from './ServiceSection.vue';
     import ChooseUsSection from './ChooseUsSection.vue';
+    import ReviewSection from './ReviewSection.vue';
 
     export default {
         data() {
@@ -11,7 +12,7 @@
             };
         },
 
-        components: { JumboSection, AboutUsSection, ServiceSection, ChooseUsSection }
+        components: { JumboSection, AboutUsSection, ServiceSection, ChooseUsSection, ReviewSection }
     }
 </script>
 
@@ -20,6 +21,7 @@
     <AboutUsSection></AboutUsSection>
     <ServiceSection></ServiceSection>
     <ChooseUsSection></ChooseUsSection>
+    <ReviewSection></ReviewSection>
 </template>
 
 <style lang="scss" scoped>
